@@ -1,0 +1,14 @@
+version: '2'
+services:
+  probot-app:
+    build: .
+    volumes:
+      - .:/probot-app
+      - /probot-app/node_modules/
+    environment:
+      - NOW_TOKEN
+      - GH_TOKEN
+      - BUILDKITE
+      - BUILDKITE_REPO
+      - BUILDKITE_BRANCH
+      - BUILDKITE_PULL_REQUEST
