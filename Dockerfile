@@ -6,4 +6,4 @@ RUN yarn global add greenkeeper-lockfile@1
 
 COPY package.json yarn.lock /probot-app/
 
-RUN yarn
+RUN yarn --ignore-engines
